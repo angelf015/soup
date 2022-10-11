@@ -1,0 +1,12 @@
+server:
+  port: 8090
+  servlet:
+    context-path: '/sftp'
+spring:
+  profiles:
+    active:
+      development,
+      database
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
